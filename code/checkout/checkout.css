@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+:root {
+   --text-h1: #4E5150;
+   --text-body: #333;
+   --text-label: #4F4F4F;
+   --input-box: #828282;
+   --counter-background: #ebc5c5;
+   --text-black: #000;
+   --price-color: #F2994A;
+   --background-color: rgb(235, 196, 196);
+}
+
+body {
+   background-color: var(--background-color);
+   min-height: 150%;
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   max-width: 150%;
+}
+
+fieldset {
+   border: none;
+   display: flex;
+   justify-content: center;
+}
+
+.header {
+   position: relative;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 10px 5%;
+}
+
+h1,
+h2,
+h5 {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 600;
+}
+
+h5 {
+   font-size: 18px;
+   line-height: 22px;
+   color: var(--text-body);
+}
+
+.header h1 {
+   font-size: 36px;
+   line-height: 34px;
+   color: var(--text-body);
+}
+
+h2 {
+   width: 181px;
+   height: 22px;
+   left: 239px;
+   top: 159.06px;
+   font-size: 18px;
+   line-height: 22px;
+   color: var(--text-h2);
+}
+
+i.fa:before {
+   color: var(--input-box);
+}
+
+p.price {
+   color: var(--price-color);
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 30px;
+}
+
+p.price s {
+   font-weight: 600;
+   font-size: 12px;
+   line-height: 15px;
+   text-decoration-line: line-through;
+   color: #4E5150;
+}
+
+.main__container {
+   display: flex;
+   justify-content: space-evenly;
+   flex-direction: row-reverse;
+   margin: 4%;
+}
+
+.form__container {
+   width: 5%;
+   /* padding:1%; */
+}
+
+.form__container>form {
+   font-family: 'Montserrat';
+   font-weight: 100;
+   font-size: 18px;
+   line-height: 22px;
+   /* identical to box height */
+   /* Gray 1 */
+   color: var(--text-body);
+}
+
+.form__container .mb-4 label,
+.form__container .mb-6 label {
+    color: var(--text-label);
+    font-size: 12px;
+    line-height: 10px;
+    width: 20px;
+
+}
+
+.cart__container {
+   width: 20px;
+   height: 535px;
+   top: 170px;
+   margin-left: 50%;
+   padding-right: 10%;
+   padding-left: 10%;
+   /* Gray 6 */
+   background: #e8d0d0;
+   border-radius: 50px;
+}
+
+.cart__container img {
+   width: 10px;
+   height: 10px;
+   border-radius: 12px;
+}
+
+.cart_container .first_item,
+.cart_container .second_item {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.counter__block {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   position: relative;
+   left: 6%;
+   border: 1px solid #828282;
+   box-sizing: border-box;
+   border-radius: 12px;
+   width: 134px;
+   height: 52px;
+}
+
+.counter_block button#additional_counter {
+   width: 30px;
+   height: 21px;
+   line-height: 1px;
+   background: var(--counter-background);
+   border-radius: 5px;
+   color: var(--text-black);
+}
+
+p#counter {
+   width: 20px;
+   height: 20px;
+}
+
+.counter_block button#minus_counter {
+   width: 20px;
+   height: 20px;
+   line-height: 1;
+   background: var(--counter-background);
+   border-radius: 5px;
+   color: var(--text-black);
+}
+
+.total__amount .flex-1 {
+   font-weight: 600;
+   font-size: 14px;
+   line-height: 17px;
+   text-align: right;
+}
+
+.rounded {
+   border-radius: 12px;
+}
+
+.submit__button {
+   display: flex;
+   justify-content: flex-end;
+   top: 1%;
+   bottom: 1%;
+}
+
+.submit__button button {
+   position: center;
+   width: 100px;
+   height: 54px;
+}
+
+footer {
+   position: relative;
+   bottom: 50%;
+   display: inline-flex;
+   justify-content: center;
+   left: 50%;
+   color: #fcfafa;
+}
+.har {
+   background-color: #000;
+   padding: 10px;
+}
+/* Responsive styles */
+
+@media all and (max-width:768px) {
+   .header {
+       position: relative;
+       margin: 5px 5%;
+   }
+   .container {
+       padding: 20px;
+       margin: 0 auto;
+   }
+   .max-w-lg {
+       width: 100%;
+   }
+   .main__container {
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+   }
+   .cart__container {
+       width: 200%;
+   }
+   .form__container{
+       width: 200%;
+       padding:200%;
+    }
+}
